@@ -38,7 +38,7 @@ lr1.fit(X_train, y_train)
 
 import streamlit as st
 st.title('LinkedIn User Prediction App')
-st.subheader('Configure demographics to predict if someone is likely to use LinkedIn:')
+st.caption('Configure demographics to predict if someone is likely to use LinkedIn:')
 st.divider()
 
 
@@ -112,5 +112,6 @@ if pred_result == 1:
 else:
     pred_label = "not be a LinkedIn user"    
     
-st.write(f"This person is predicted to **{pred_label}** with {pred_perc[0]}% probability")   
+container = st.container(border=True)
+container.write(f"This person is predicted to **{pred_label}** with {pred_perc[0]}% probability")   
 
