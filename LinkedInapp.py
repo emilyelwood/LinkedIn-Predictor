@@ -39,7 +39,6 @@ lr1.fit(X_train, y_train)
 import streamlit as st
 st.title('LinkedIn User Prediction App')
 st.caption('Configure demographics to predict if someone is likely to use LinkedIn:')
-st.divider()
 
 
 inc_options = ["Less than $10,000", "10 to under $20,000", "20 to under $30,000",
